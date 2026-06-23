@@ -24,7 +24,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-white">GitHub</p>
                   <a href={contact.github} target="_blank" rel="noreferrer" className="text-white/70 hover:text-white">
-                    github.com/rifkyramadhan
+                    github.com/rifkyr990
                   </a>
                 </div>
               </div>
@@ -33,7 +33,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-semibold text-white">LinkedIn</p>
                   <a href={contact.linkedin} target="_blank" rel="noreferrer" className="text-white/70 hover:text-white">
-                    linkedin.com/in/rifky-ramadhan
+                    linkedin.com/in/rifky-rmdhn
                   </a>
                 </div>
               </div>

@@ -1,15 +1,14 @@
-import { NextResponse } from "next/server";
+import type { MetadataRoute } from "next";
 
-export function GET() {
-  return new NextResponse(
-    `User-agent: *
-Allow: /
-Sitemap: ${process.env.NEXT_PUBLIC_SITE_URL ?? "https://rifkyramadhan.dev"}/sitemap.xml
-`,
-    {
-      headers: {
-        "Content-Type": "text/plain",
-      },
-    }
-  );
+export default function robots(): MetadataRoute.Robots {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://rifkyramadhan.dev";
+
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: `${siteUrl}/sitemap.xml`,
+  };
 }
